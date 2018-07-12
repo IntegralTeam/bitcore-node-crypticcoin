@@ -1,14 +1,13 @@
 {
-  "name": "bitcore-node-zcash",
-  "description": "Full node with extended capabilities using Bitcore and Zcash",
+  "name": "bitcore-node-crypticcoin",
+  "description": "Full node with extended capabilities using Bitcore and CrypticCoin",
   "author": "BitPay <dev@bitpay.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://git.sfxdx.ru/cryptic/bitcore-node-crypticcoin.git"
+  },
   "version": "3.1.2",
   "main": "./index.js",
-  "repository": "git://github.com/zcash-hackworks/bitcore-node-zcash.git",
-  "homepage": "https://github.com/zcash-hackworks/bitcore-node-zcash",
-  "bugs": {
-    "url": "https://github.com/zcash-hackworks/bitcore-node-zcash/issues"
-  },
   "contributors": [
     {
       "name": "Christopher Jeffrey"
@@ -49,13 +48,13 @@
     "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "tags": [
-    "zcash",
-    "zcashd"
+    "CrypticCoin",
+    "CrypticCoind"
   ],
   "dependencies": {
     "async": "^1.3.0",
     "bitcoind-rpc": "^0.6.0",
-    "bitcore-lib-zcash": "zcash-hackworks/bitcore-lib-zcash",
+    "bitcore-lib-crypticcoin": "ianamunoz/bitcore-lib-crypticcoin",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",

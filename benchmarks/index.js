@@ -5,7 +5,7 @@ var bitcoin = require('bitcoin');
 var async = require('async');
 var maxTime = 20;
 
-console.log('Zcash Service native interface vs. Zcash JSON RPC interface');
+console.log('CrypticCoin Service native interface vs. CrypticCoin JSON RPC interface');
 console.log('----------------------------------------------------------------------');
 
 // To run the benchmarks a fully synced Bitcore Core directory is needed. The RPC comands
@@ -43,12 +43,12 @@ bitcoind.start(function(err) {
   if (err) {
     throw err;
   }
-  console.log('Zcash started');
+  console.log('CrypticCoin started');
 });
 
 bitcoind.on('ready', function() {
 
-  console.log('Zcash ready');
+  console.log('CrypticCoin ready');
 
   var client = new bitcoin.Client({
     host: 'localhost',
