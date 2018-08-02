@@ -110,7 +110,7 @@ Edit `bitcore-node.json` with something similar to:
 ```json
 {
   "network": "livenet",
-  "port": 3001,
+  "port": 80,
   "services": [
     "bitcoind",
     "web",
